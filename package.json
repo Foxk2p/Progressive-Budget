@@ -1,0 +1,28 @@
+{
+  "name": "Progressive-Budget",
+  "version": "1.0.0",
+  "description": "Progressive-Budget app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Foxk2p/Progressive-Budget.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Foxk2p/Progressive-Budget/issues"
+  },
+  "homepage": "https://github.com/Foxk2p/Progressive-Budget#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "lite-server": "^2.5.4",
+    "mongoose": "^5.9.20",
+    "morgan": "^1.10.0"
+  }
+}
