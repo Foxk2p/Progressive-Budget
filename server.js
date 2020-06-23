@@ -1,3 +1,4 @@
+require("dotenv").config()
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
@@ -23,9 +24,20 @@ app.use(express.static("public"));
 // routes
 app.use(require("./routes/api.js"));
 
+
 require('./config')
-  .then(() => app.listen(3000))
+  .then(() => app.listen(process.env.PORT || 3000))
   .catch(err => console.error(err))
+
+
+// mongo05 reference
+
+// require('./config')
+//   .then(() => app.listen(3000))
+//   .catch(err => console.error(err))
+
+
+// develop reference
 
 // app.listen(PORT, () => {
 //   console.log(`App running on port ${PORT}!`);
